@@ -1,0 +1,76 @@
+header{
+  background-color:var(--main-blue);
+}
+header .rounded-circle{
+  width: 100px;
+}
+.logo-title{
+  font-size: var(--title-tablet);
+  color: var(--main-white);
+  font-weight: var(--font-bold-tablet);
+  font-family: var(--font-family);
+  margin: auto 5rem;
+}
+.form-log-in label{
+  margin-left: 5rem;
+}
+#email, #password{
+  margin: 0 auto;
+  width: 80%;
+  max-width: 50rem;
+  height: 5rem;
+  padding-left: 2rem;
+  font-size: var(--font-bold-tablet);
+}
+.btn-log-in{
+  height: 5rem;
+  font-size: var(--font-text-tablet);
+  font-weight: var(--font-bold-tablet);
+  width: 25%;
+  max-width: 20rem;
+}
+
+
+.accountOption{
+  top: 6rem;
+}
+.userSearch button{
+  width: 15rem;
+  margin-inline: 1rem;
+  font-size: var(--font-text-tablet);
+}
+.userSearch{
+  display: grid;
+  min-width: 700px;
+  width: 90vw;
+  font-size: var(--font-text-computer);
+  max-width: 100rem;
+  grid-template-columns: 55rem 7rem 7rem;
+  gap: 0;
+}
+.material-symbols-outlined.add,
+.material-symbols-outlined.editPatient{
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: var(--main-blue);
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 700,
+  'GRAD' 1,
+  'opsz' 48
+}
+
+.patientInfo .patientInfoUl{
+  grid-template-columns: 40% 8% 37% 15% ;
+  }
+  .patientInfoUl .address{
+    overflow-x: scroll;
+    grid-area: 2 / 1 / 2 / 3;
+  }
+  .patientInfoUl .email{
+    overflow-x: scroll;
+    grid-area: 2 / 3 / 2 / 4;
+  }
+  .patientInfoUl ul{
+    padding: 0;
+  }
