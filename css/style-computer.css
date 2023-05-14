@@ -1,0 +1,135 @@
+.form-log-in label{
+  margin-inline: calc(50% - 23rem);
+}
+
+header .account{
+  font-size: var(--font-text-computer);
+  position: relative;
+}
+.account:active{  
+  font-weight: var( --font-bold-tablet);
+  
+  animation: 1s linear slidein;
+}
+.accountOption{
+  display: grid;
+  gap: 2rem;
+  position: absolute;
+  right: 0;
+  top: 5rem;
+  width: 20rem;
+  font-size: var(--font-bold-mobile);
+  border-radius: 1rem;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  box-shadow: 10px 10px 61px 5px rgba(0,0,0,0.7);
+-webkit-box-shadow: 10px 10px 61px 5px rgba(0,0,0,0.7);
+-moz-box-shadow: 10px 10px 61px 5px rgba(0,0,0,0.7);
+}
+.log-in-section h1{
+  text-align: ce;
+}
+.logOut{
+  border-radius: 1rem;
+  margin-bottom: 3rem;
+  border: none;
+}
+.logOut:hover{
+  
+  border: var(--main-blue) 1px solid;
+  transform: scale(1.2);
+}
+
+.profileInfo{
+  width: 80vw;
+  max-width: 200rem;
+}
+
+  
+.userSearch{
+  background-color: white;
+  display: grid;
+  min-width: 700px;
+  width: 90vw;
+  font-size: var(--font-text-computer);
+  max-width: 100rem;
+  grid-template-columns: 55rem 7rem 7rem;
+  list-style: none;
+  gap: 0;
+}
+.userSearch button{
+  width: 9rem;
+  margin-left: 1rem;
+  font-size: var(--font-text-computer);
+}
+.material-symbols-outlined.editPatient:hover{
+color: var(--main-black);
+box-shadow: -2px 0px 13px 10 px rgba(0,0,0,0.39);
+-webkit-box-shadow: -2px 0px 13px 10px rgba(0,0,0,0.39);
+-moz-box-shadow: -2px 0px 13px 10px rgba(0,0,0,0.39);
+}
+.material-symbols-outlined.add:hover{
+  color: var(--main-black);
+  box-shadow: -2px 0px 13px 10px rgba(0,0,0,0.39);
+  -webkit-box-shadow: -2px 0px 13px 10px rgba(0,0,0,0.39);
+  -moz-box-shadow: -2px 0px 13px 10px rgba(0,0,0,0.39);
+}
+.material-symbols-outlined.add,
+.material-symbols-outlined.editPatient{
+  font-size: 4.5rem;
+  font-weight: 900;
+  color: var(--main-blue);
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 700,
+  'GRAD' 1,
+  'opsz' 48
+}
+.profileOptions{
+  margin-top: 2rem;
+  height: 6rem;
+}
+.material-symbols-outlined.edit,
+.material-symbols-outlined.save{
+  font-size: 4rem;
+
+}
+.material-symbols-outlined.edit:hover{
+  color: var(--main-blue);
+  font-weight: 600;
+  transform: scale(1.25);
+}
+.material-symbols-outlined.save:hover{
+  color: var(--main-blue);
+  font-weight: 600;
+  transform: scale(1.25); 
+}
+.accountInfo{
+  display: grid;
+  font-size: var(--font-text-computer);
+  grid-template-columns: 50% 50%;
+  grid-auto-rows: 12rem;
+}
+.accountInfo div{
+  display: grid;
+  grid-template-rows: 5rem;
+}
+
+.accountInfo #estado{
+  height: 4.5rem;
+  width: 10rem;
+  border: none;
+  padding-left: 1rem;
+}
+.patientInfo .patientInfoUl{
+  max-width: 200rem;
+  grid-template-columns: repeat(5, 20%);
+  }
+  .patientInfoUl .address{
+    overflow-x: visible;
+    grid-area: 2 / 1 / 2 / 4;
+  }
+  .patientInfoUl .email{
+    overflow-x: visible;
+    grid-area: 2 / 4 / 2 / 6;
+  }

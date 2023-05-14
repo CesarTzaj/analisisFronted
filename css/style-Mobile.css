@@ -1,0 +1,246 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html{
+  font-size: 62.5%;
+}
+:root{
+  --main-blue: #0070d2;
+  --main-white: #ffffff;
+  --main-black: #000000;
+  --title-mobile: 2rem;
+  --title-tablet: 5rem;
+  --font-text-mobile: 1.8rem;
+  --font-text-tablet: 1.4rem;
+  --font-text-computer: 2.5rem;
+  --font-bold-mobile: 500;
+  --font-bold-tablet: 700;
+  --font-family: 'Times New Roman', Times, serif;
+}
+input[type="number"]::-webkit-inner-spin-button{
+  -webkit-appearance: none;
+}
+header{
+
+  background-color:var(--main-blue);
+}
+header .account{
+  display: flex;
+  position: relative;
+  top: 2rem;
+  list-style: none;
+  gap: 1rem;
+  align-self: center;
+  font-size: var(--title-mobile);
+  
+}
+.accountOption{
+  
+  list-style: none;
+}
+header .rounded-circle{
+  width: 5rem;
+}
+header{
+  background-color:var(--main-blue);
+}
+.logo-title{
+  font-size: var(-title-mobile);
+  color: var(--main-white);
+  font-weight: var(--font-bold-mobile);
+  font-family: var(--font-family);
+  margin: auto 5rem;
+}
+.log-in-section{
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  background-image: url("https://images.unsplash.com/photo-1458501534264-7d326fa0ca04?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTR8fGhlYWx0aHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.log-in-section{
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  background-image: url("https://images.unsplash.com/photo-1458501534264-7d326fa0ca04?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTR8fGhlYWx0aHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hide{
+  display: none;
+}
+.log-in-section.hide{
+  display: none;
+}
+
+.log-in-section h1{
+  font-size: var(--title-mobile);
+  font-weight: var(--font-bold-mobile);
+}
+
+.form-log-in{
+  display: grid;
+  text-align: left;
+  
+  margin-top: 2rem;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: 80%;
+  grid-auto-rows: 6rem;
+  width: 100vw;
+}
+.form-log-in label{
+  margin-left: 2rem;
+  font-size: var(--title-mobile);
+  color: var(--main-black);
+  font-weight: var(--font-bold-mobile);
+  
+}
+#email, #password{
+  height: 3rem;
+  font-size: var(--font-text-mobile);
+  padding-left: 2rem;
+}
+.btn-log-in{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-inline: auto;
+  width: 50%;
+  height: 4rem;
+  grid-area: 6 / 1 / 7 /2  ;
+  font-size: var(--font-text-mobile);
+  border-radius: 1rem;
+  border: none;
+  box-shadow: 20px 16px 51px -2px rgba(0,0,0,1);
+-webkit-box-shadow: 20px 16px 51px -2px rgba(0,0,0,1);
+-moz-box-shadow: 20px 16px 51px -2px rgba(0,0,0,1);
+}
+
+.profile section:first-child{
+  height: 8rem;
+  background-color: #0070d2;
+}
+.profileInfo{
+  width: 80vw;
+  max-width: 60rem;
+}
+.userSearch{
+  display: grid;
+  justify-content:left;
+  min-width: 310px;
+  padding: 0;
+  width: 90%;
+  max-width: 500px;
+  grid-template-columns: 80% 10% 10%;
+  font-size: var(--title-mobile);
+  list-style: none;
+}
+.userSearch input{
+  min-width: 14rem;
+  
+  font-size: 5px;
+}
+.material-symbols-outlined.add,
+.material-symbols-outlined.editPatient{
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: var(--main-blue);
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 700,
+  'GRAD' 1,
+  'opsz' 48
+} 
+
+.accountInfo {
+  display: grid;
+  grid-auto-rows: 7rem;
+  margin-left: 2rem;
+}
+.accountInfo div{
+  display: grid;
+  grid-auto-rows: 2rem;
+}
+.accountInfo div label{
+  height: 3rem;
+}
+.accountInfo div input{
+  
+  height: 3.4rem;
+  width: 90%;
+  border: none;
+  outline: none;
+  box-shadow: 10px 10px 31px -15px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 10px 31px -15px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 31px -15px rgba(0,0,0,0.75); 
+}
+.material-symbols-outlined.edit,
+.material-symbols-outlined.save{
+  font-size: 3rem;
+}
+
+.account{
+  position: relative;
+}
+.accountOption{
+  display: grid;
+  gap: 2rem;
+  position: absolute;
+  right: 0;
+  top: 2.9rem;
+  width: 20rem;
+  font-size: var(--font-text-mobile);
+  border-radius: 1rem;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  background-color: #ffffff;
+  box-shadow: 10px 10px 61px 5px rgba(0,0,0,0.7);
+-webkit-box-shadow: 10px 10px 61px 5px rgba(0,0,0,0.7);
+-moz-box-shadow: 10px 10px 61px 5px rgba(0,0,0,0.7);
+ z-index: 2;
+}
+.logOut{
+  border-radius: 1rem;
+  margin-bottom: 3rem;
+  border: none;
+}
+.patientInfo{
+  display: grid;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.patientInfo .patientInfoUl{
+display: grid;
+
+grid-template-columns: 50% 40%;
+position: relative;
+font-size: var(--font-text-mobile);
+list-style: none;
+}
+.patientInfo ul{
+  position: relative;
+  list-style: none;
+}
+.patientInfoUl .address{
+  grid-area: 4 / 1 / 4 / 3;
+}
+.patientInfoUl .address ul{
+  padding: 0;
+}
+
+.patientInfoUl .email{
+  grid-area: 5 / 1 / 5 / 3;
+}
+.appointment{
+  display: flex;
+  list-style: none;
+}
