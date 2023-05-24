@@ -1,3 +1,6 @@
+@media screen and (min-width: 1020px){
+  
+
 .form-log-in label{
   margin-inline: calc(50% - 23rem);
 }
@@ -133,3 +136,4 @@ box-shadow: -2px 0px 13px 10 px rgba(0,0,0,0.39);
     overflow-x: visible;
     grid-area: 2 / 4 / 2 / 6;
   }
+}

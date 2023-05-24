@@ -1,15 +1,15 @@
 import React, { createContext, useEffect, useState } from "react";
 
-import { useFetch } from "../hooks/useFetch";
+import { useFetch } from "../hooks/api/useFetch";
 import { useLogin } from "../hooks/useLogin";
-import { useUpdate } from "../hooks/useUpdate";
+import { usePersonInfo } from "../hooks/useUpdate";
 const clinicContext = createContext()
 
 function DataPrivider({ children }) {
   const { data, setQuery, found } = useFetch()
-  const [dpi, setDpi] = useState("4564");
-  const [update, setUpdate] = useState(true);
-
+  const [dpi, setDpi] = useState("");
+  const [edit, setEdit] = useState(true);
+  const [add, setAdd] = useState(false);
   
 
   const {
@@ -17,8 +17,6 @@ function DataPrivider({ children }) {
     setLogin,
     patient,
     setPatient,
-    patients,
-
   } = useLogin();
 
   
@@ -26,8 +24,7 @@ function DataPrivider({ children }) {
   const {
     nombre,
     setNombre,
-
-  } = useUpdate();
+  } = usePersonInfo();
 
   useEffect(()=>{
     if (data !=null) {
@@ -43,15 +40,15 @@ function DataPrivider({ children }) {
       setLogin,
       patient,
       setPatient,
-      patients,
       dpi,
       setDpi,
       found,
-      update, 
-      setUpdate,
+      edit, 
+      setEdit,
       nombre,
       setNombre,
-
+      add,
+      setAdd
     }}
   >
     {children}

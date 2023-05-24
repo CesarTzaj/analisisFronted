@@ -1,6 +1,6 @@
-import { useContext, useState } from "react";
-import { clinicContext } from "../data/dataProvider";
-function useUpdate() {
+import { useState } from "react";
+
+function usePersonInfo() {
   const [nombre, setNombre] = useState('');
 
   return{ 
@@ -11,4 +11,4 @@ function useUpdate() {
 
 }
 
-export {useUpdate}
+export {usePersonInfo}

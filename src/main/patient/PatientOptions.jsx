@@ -8,9 +8,8 @@ function PatientOptions() {
     dpi,
     setDpi,
     setQuery,
-    setUpdate,
-    update
-
+    setEdit,
+    setAdd
   } = useContext(clinicContext);
 
   return (
@@ -53,7 +52,7 @@ function PatientOptions() {
         <span
           className="material-symbols-outlined editPatient me-lg-4"
           onClick={() => {
-            setUpdate(false)
+            setEdit(false)
           }}
         >
           edit
@@ -61,8 +60,13 @@ function PatientOptions() {
       </li>
 
       <li className="nav-item dropdown">
-
-        <span className="material-symbols-outlined add me-lg-4">
+        <span 
+        className="material-symbols-outlined add me-lg-4"
+        onClick={() => {
+          setEdit(false);
+          setAdd(true)
+        }}
+        >
           add
         </span>
       </li>
@@ -70,7 +74,7 @@ function PatientOptions() {
 
         <span className="material-symbols-outlined add me-lg-4"
           onClick={() => {
-            setUpdate(true)
+            setEdit(true)
           }}
         >
           save

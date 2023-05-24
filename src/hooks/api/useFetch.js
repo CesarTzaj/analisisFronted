@@ -1,17 +1,6 @@
-
 import { useEffect, useState } from "react";
 
 const url = 'http://localhost:8081/historial-clinico/v1/'
-const persona = {
-  "dpi": 545411,
-  "gender": "M",
-  "age": 3,
-  "firstName": "Carlos",
-  "middleName": "Noe",
-  "lastName": "Lopez",
-  "secLastName": "Gomez"
- 
-}
 
 function useFetch(){
   
